@@ -5,32 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="grade.css">
     <title>Marksheet in javascript</title>
 </head>
 
-<body style="line-height: 2.5;">
+<body>
     <form>
-        <label for="subject">ENGLISH:
-            <input type="number" placeholder="Enter Marks" id="eng"></label><br>
+        <label for="Student Name">STUDENT NAME: <input type="text" id="student" placeholder="Student Name"></label><br>
+        <label for="subject">ENGLISH:<input type="number" placeholder="Enter Marks" id="eng"></label><br>
 
-        <label for="subject">URDU:
-            <input type="number" placeholder="Enter Marks" id="urdu"></label><br>
+        <label for="subject">URDU:<input type="number" placeholder="Enter Marks" id="urdu"></label><br>
 
-        <label for="subject">ISLAMIAT:
-            <input type="number" placeholder="Enter Marks" id="islam"></label><br>
+        <label for="subject">ISLAMIAT:<input type="number" placeholder="Enter Marks" id="islam"></label><br>
 
-        <label for="subject">MATHS:
-            <input type="number" placeholder="Enter Marks" id="math"></label><br>
+        <label for="subject">MATHS:<input type="number" placeholder="Enter Marks" id="math" size="10" maxlength="10"></label><br>
 
-        <label for="subject">PHYSICS:
-            <input type="number" placeholder="Enter Marks" id="phy"></label><br>
-
-            <!-- <label for="subject">Total:
-                <input type="number" placeholder="Total Marks" id="total"></label><br> -->
-        </form>
+        <label for="subject">PHYSICS:<input type="number" placeholder="Enter Marks" id="phy"></label><br>
+    </form>
+    <div id="btn">
         <button onclick="Total()">Calculate</button>
+    </div>
 
-       <script src="grade.js"></script>
+    <div>
+        <p id="paragraph"></p>
+    </div>
+    <script src="grade.js"></script>
 </body>
 
 </html>
