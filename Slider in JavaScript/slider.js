@@ -17,25 +17,17 @@ for (i = 0; i < images.length; i++) {
 function currentSlide(event) {
     let span = document.getElementById(`dot-${event}`).style.backgroundColor="red";
     console.log(span)
-    // for (doted = 0; doted < images.length; doted++) {
+    
     image.src = images[event];
 
-    // }
     for ( index = 0; index < images.length; index++) {
-       // const event = images.length[event];
-        
         if(event == index){
             document.getElementById(`dot-${index}`).style.backgroundColor="red";
         }else{
             document.getElementById(`dot-${index}`).style.backgroundColor="#717171";
         }
     }
-
-
-
 };
-
-// }
 function changeImg() {
     if (count < images.length - 1) {
         // alert("hello");
@@ -61,6 +53,3 @@ function prevImg() {
         image.src = images[count];
     }
 };
-
-
-

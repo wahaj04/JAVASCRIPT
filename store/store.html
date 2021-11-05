@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="store.css">
+    <title>OUR STORE</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="head">
+            <h1>Our <span class="title">Store</span></h1>
+        </div>
+        <div id="navbar">
+            <ul>
+                <li><a href="#" onclick="setType(this.id)" id="all" class="btn" title="All"> ALL</a></li>
+                <li><a href="#" onclick="setType(this.id)" id="cake" class="btn" title="cakes">CAKES </a></li>
+                <li><a href="#" onclick="setType(this.id)" id="cupcakes" class="btn" title="cupcake">CUPCAKES</a></li>
+                <li><a href="#" onclick="setType(this.id)" id="sweets" class="btn" title="sweets">SWEETS </a></li>
+                <li><a href="#" onclick="setType(this.id)" id="doughnut" class="btn" title="doughnuts">DOUGHNUT </a>
+                </li>
+            </ul>
+            <div class="Search">
+                <button onclick="getVal()" id="s-icon" type="button" title="search"><i
+                        class="fa fa-search"></i></button>
+                <input onkeyup="getVal()" type="search" id="search" placeholder="Search">
+            </div>
+        </div>
+        <div id="img-div" class="images" style="display: flex;"></div>
+    </div>
+</body>
+<script src="store.js"></script>
+
+</html>
